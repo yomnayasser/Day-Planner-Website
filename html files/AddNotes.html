@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/umd/popper.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Add Nots | Day Planner</title>
+
+    <style type="text/css">
+
+   /* top,right,bottom,left*/ 
+   ul.notes li {
+  margin: 50px 0px 50px 0px;
+  /* float: right; */
+}
+
+/* Removes the bullet from list */
+ul.notes li, ul.tag-list li {
+  list-style: none;
+}
+
+/*date size */
+ul.notes li div small {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 10px;
+}
+
+div.rotate-1 {
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+}
+
+.navy-bg {
+  background-color: #1ab394;
+  color: #ffffff;
+}
+
+ul.notes li div {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  height: 210px;
+  width: 210px;
+  padding: 1em;
+  -moz-box-shadow: 5px 5px 7px #212121;
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -moz-transition: -moz-transform 0.15s linear;
+  -o-transition: -o-transform 0.15s linear;
+  -webkit-transition: -webkit-transform 0.15s linear;
+}
+.btn_container
+{
+    margin-left: 35%;
+}
+.container
+{
+    margin-bottom: 5%;
+}
+.notes
+{
+    margin-left: 5%;
+}
+
+   
+    </style>
+   
+</head>
+<body> 
+    
+        <nav class="navbar navbar-expand-lg navbar-collapse-sm navbar-dark" style="background-color: rgb(42, 126, 115);">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="font-style: italic;font-weight: bold;">Day Planner</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" style="padding-inline: 300px;">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#"
+                        style="margin-left:30px;margin-right:30px;">Notes</a>
+                        <a class="nav-link" href="#" style="margin-left:30px;">Reminders</a>
+                        <a class="nav-link" href="#" style="margin-left:30px;">ToDo</a>
+                        <a class="nav-link" href="#" style="margin-left:30px;">Wallet</a>
+                        <a class="nav-link" href="#" style="margin-left:30px;">Calendar</a>
+                        <a class="nav-link" href="#" style="margin-left:30px;">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+       
+<div class="container bootstrap snippets bootdey">
+    <div class="row">
+        <ul class="notes">
+            <li>
+                <div class="rotate-1 navy-bg">
+                    <h4>Note Title</h4>
+                    <p>Description</p>
+                </div>
+            </li>
+            <input type="text" class="form-control" placeholder="Enter Note Title Here" /> 
+        </ul>  
+        
+    </div>
+</div>
+
+
+    </body>
+</html>
+
