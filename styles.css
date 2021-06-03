@@ -102,7 +102,7 @@ li:hover {
     -webkit-transition: -webkit-transform 0.15s;
     transition: transform 0.15s;
     -webkit-transform: translate3d(-100%,-100%,0);
-    transform: translate3d(-100%,100%,0);
+    transform: translate3d(-100%,-100%,0);
   }
   
   .hovereffect:hover h2:after {
