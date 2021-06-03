@@ -5,7 +5,10 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.0.0.min.js"></script>
     <script src="Scripts/umd/popper.js"></script>
+    <script src="Scripts/ bootstrap.bundle.min.js/bootstrap.bundle.js"></script>
     <script src="Scripts/bootstrap.js"></script>
+   
+   
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Add Nots | Day Planner</title>
 
@@ -67,9 +70,38 @@ ul.notes li div {
 {
     margin-left: 5%;
 }
-
+.form-control
+{
+    margin: 50px 0px 00px 20px;
+    width: 60%;
+}
+.SelectInput
+{
+    margin: 50px 0px 00px 20px;
+    width: 30%;
+    height: 12%;
+}
+.btn-primary
+{
+    width: 50%;
+    /* height: 10%; */
+}
+.btn_container
+{
+    margin-top: 5%;
+}
+.col-4
+{
+    margin-top: 6%;
+}
    
     </style>
+
+<script>
+    $('#titleInput').on('change', function(){
+    $('#title').text($(this).val());
+   })
+</script>
    
 </head>
 <body> 
@@ -99,17 +131,110 @@ ul.notes li div {
 
        
 <div class="container bootstrap snippets bootdey">
-    <div class="row">
-        <ul class="notes">
-            <li>
-                <div class="rotate-1 navy-bg">
-                    <h4>Note Title</h4>
-                    <p>Description</p>
+
+
+        <div class="row">
+          <div class="col-lg-4">
+            <ul class="notes">
+                <li>
+                    <div class="rotate-1 navy-bg">
+                        <h4><span class="label label-primary" ID="title" >Note Title</span></h4>
+                        <p>Description</p>
+                    </div>
+                </li>  
+            </ul>
+          </div>
+          <div class="col-lg-4">
+                <label style=" margin: 50px 0px 0px 0px; font-size: large;">Choose Note Color:</label>
+                <select class="SelectInput">
+                    <option>Navy</option>
+                    <option>Red</option>
+                    <option>Orange</option>
+                    <option>Blue</option>
+                </select> 
+                <div class="row">
+                        <div class="col-4">
+                            <button class="btn btn-default">
+                                <img src="../images/bold.png" width="20" /> 
+                           </button>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-default">
+                                <img src="../images/italic-text.png" width="20" /> 
+                           </button>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-default">
+                                <img src="../images/underlined-text-option.png" width="20" /> 
+                           </button>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-default">
+                                <img src="../images/list.png" width="20" /> 
+                           </button>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-default">
+                                <img src="../images/check-box.png" width="20" /> 
+                           </button>
+                        </div>
+                        <!-- <div class="col-4">
+                            <button class="btn btn-default">
+                                <img src="../images/bold.png" width="20" /> 
+                           </button>
+                        </div> -->
                 </div>
-            </li>
-            <input type="text" class="form-control" placeholder="Enter Note Title Here" /> 
-        </ul>  
-        
+          </div>
+        </div>
+       
+
+      
+    <!-- <div class="row">
+        <div class="col">
+            <ul class="notes">
+                <li>
+                    <div class="rotate-1 navy-bg">
+                        <h4><span class="label label-primary" ID="title" >Note Title</span></h4>
+                        <p>Description</p>
+                    </div>
+                </li>  
+            </ul> 
+        </div>
+        <div class="col">
+            <label style=" margin: 50px 0px 00px 0px; font-size: large;">Choose Note Color:</label>
+            <select class="SelectInput">
+                <option>Navy</option>
+                <option>Red</option>
+                <option>Orange</option>
+                <option>Blue</option>
+            </select> 
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-lg-12">
+        <div class="row"> 
+            <label style=" margin: 50px 0px 00px 20px; font-size: large;">Enter Note Title:</label>
+            <input type="text" class="form-control"/>
+        </div>
+    
+        <div class="row"> 
+            <label style=" margin: 50px 0px 00px 20px; font-size: large;">Enter Note Descreption:</label>
+            <textarea class="form-control" rows="5"></textarea>    
+        </div>
+        <div class="btn_container">
+            <a href="#" class="btn btn-primary">Save</a>
+        </div>
+     
     </div>
 </div>
 
