@@ -1,0 +1,30 @@
+.SelectInput:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #719ECE;
+}
+select{
+    padding-right: 10px; 
+    border-radius: 5px; 
+    border-color: rgb(192, 199, 206);
+    color:rgb(101, 107, 112);
+    position: absolute;
+    left: 53%;
+    margin-right: -50%;
+}
+.savebtn{
+    position: absolute;
+    left: 48%;
+    top: 250px;
+    margin-right: -50%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(42, 126, 115);
+    border-style: hidden;
+    color: white;
+}
+.savebtn:focus
+{
+    outline: none !important;
+    box-shadow: 0 0 10px  rgb(48, 143, 130);
+}

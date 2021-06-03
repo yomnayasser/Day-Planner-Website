@@ -1,7 +1,12 @@
 <html>
      <head>
         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../bootstrap.min.css"/>
+        <link rel="stylesheet" href="../bootstrap-select.min.css"/>
+        <link rel="stylesheet" href="../font-awesome.min.css"/>
+        <link rel="stylesheet" href="../temp.css"/>
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+         <link rel="stylesheet" href="../all.css"/>
          <title>Add Budget</title>
      </head>
     <body>
@@ -27,11 +32,13 @@
                 </div>
             </div>
         </nav>
-        
+
         <div class="container">
             <h3 style="text-align: center;padding-top: 50px;">My Wallet</h3>
-            <div class="card " style="margin-top: 50px;margin-left:250px;width: 600px;">
-                <div class="card-body">
+            <div class="card " style="margin-top: 50px;margin-left:255px;width: 600px;">
+                <div class="card-body" style="height: 320px;">
+        
+        
                     <label style="font-weight: bolder;">Enter Your Budget :</label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -42,13 +49,28 @@
                             <span class="input-group-text">.00</span>
                         </div>
                     </div>
-    
+        
+        
                     <label style="font-weight: bolder;">Enter Start Date:</label>
-                    <div>
-                        <input type='date' class="form-control" placeholder="dd/mm/yyyy" />
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="date" />
+                    </div>
+        
+        
+                    <label style="font-weight: bolder;position: absolute;left: 33%;margin-right: -70%;">Repeat On :</label>
+                    <select class="SelectInput">
+                        <option>None</option>
+                        <option>Weekly</option>
+                        <option>Monthly</option>
+                    </select>
+
+                    <div >
+                        <button class="savebtn"><i class="fa fa-check"></i></button>
                     </div>
                 </div>
             </div>
+        
         </div>
+        <script src="../all.js"></script>
     </body>
 </html>
