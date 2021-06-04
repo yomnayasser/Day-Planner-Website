@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../temp.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../all.css" />
+
+    <script src="../all.js"></script>
+    <title>Wallet Main</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-collapse-sm navbar-dark" style="background-color: rgb(42, 126, 115);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../homepage.html" style="font-style: italic;font-weight: bold;">Day Planner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="padding-inline: 300px;">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#" style="margin-left:30px;">Notes</a>
+                    <a class="nav-link" href="#" style="margin-left:30px;">Reminders</a>
+                    <a class="nav-link" href="#" style="margin-left:30px;">ToDo</a>
+                    <a class="nav-link active" aria-current="page" href="#"
+                        style="margin-left:30px;margin-right:30px;">Wallet</a>
+                    <a class="nav-link" href="#" style="margin-left:30px;">Calendar</a>
+                    <a class="nav-link" href="SiginIn.html" style="margin-left:30px;">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+            <div class="row">
+                <h4 style="padding-top: 20px;padding-left: 40%;font-weight: bolder;padding-bottom: 20px;">Remaining : $ 5000
+                </h4>
+                <a href="AddBudget.html" style="padding-left: 10px;padding-top: 20px;"><button class="editbtn"><i class="fas fa-pen"></i></button></a>
+            </div>
+            <div style="height: 8px; width: 600px;margin-left: 24%;" class="progress rounded-pill">
+                <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"
+                    class="progress-bar rounded-pill bg-gradient"></div>
+            </div>
+    
+            <div class="card" style="margin-top: 20px;border-style: hidden;right: -20px;">
+            <div class="text-center" style="padding-top: 40px;width:fit-content;padding-left: 27%;">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th class="col-md-6">Name</th>
+                            <th class="col-md-2">Category</th>
+                            <th class="col-md-2 text-center">Date</th>
+                            <th class="col-md-2 text-center">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-md-6">Fruits and vegetables</h4>
+                            </td>
+                            <td class="col-md-2" style="text-align: center"> Food </td>
+                            <td class="col-md-2 text-center">5/5/2021</td>
+                            <td class="col-md-2 text-center">$100</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-6">Sofa</h4>
+                            </td>
+                            <td class="col-md-2" style="text-align: center"> Furniture</td>
+                            <td class="col-md-2 text-center">20/5/2021</td>
+                            <td class="col-md-2 text-center">$500</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-6">Tshirt and skirt</h4>
+                            </td>
+                            <td class="col-md-2" style="text-align: center"> clothing </td>
+                            <td class="col-md-2 text-center">1/6/2021</td>
+                            <td class="col-md-2 text-center">$400</td>
+                        </tr>
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td class="text-right">
+                                <h4><strong>Total: </strong></h4>
+                            </td>
+                            <td class="text-center">
+                                <h4><strong>$1000</strong></h4>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <a href="AddExpense.html">
+                    <button class="ExpenseBtn text-center" type="button"
+                        style="padding-left: 475px;border-style: hidden;background-color: white; color: rgb(42, 126, 115);font-weight: bolder;">
+                        + Add Expense
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
