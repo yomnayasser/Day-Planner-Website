@@ -36,19 +36,21 @@
     </nav>
 
     <div class="container">
-        <h3 style="text-align: center;padding-top: 50px;">New Expense</h3>
-        <div class="card " style="margin-top: 50px;margin-left:255px;width: 600px;">
-            <div class="card-body" style="width: 500px;align-items: center;justify-content: center;height: fit-content; padding-block-end: 50px;">
-                <div class="padding-block-end" style="align-content: center;justify-content: center;">
+        <div class="row justify-content-center">
+        <h3 style="margin-top: 50px;">New Expense</h3>
+        </div>
+        <div class="card "style="margin-top: 40px;">
+            <div class="card-body">
 
-                    <div class="row input-group mb-3" style="margin: 20px;">
-                    <label style="font-weight: bolder;padding-right: 70px;">Name : </label>
-                    <input class="form-control" type="text" style="margin-left: 20px;"/>
-                    </div>
+                <div class="row justify-content-center">
+                    <label class="col-lg-3 col-sm-3" style="font-weight: bolder;">Name : </label>
+                    <input class="form-control col-lg-5 col-sm-5" type="text"/>
+                </div>
 
-                    <div class="row input-group mb-3" style="margin: 20px;">
-                        <label style="font-weight: bolder;">Category : </label>
-                        <select class="SelectInput">
+                    <div class="row justify-content-center">
+                        <label class="col-lg-3 col-sm-3" style="font-weight: bolder;">Category : </label>
+                        <div class="col-lg-5 col-sm-5">
+                        <select class="SelectInput" style="width: 60%;">
                             <option selected="true" disabled>Select Category</option>
                             <option>Clothing</option>
                             <option>Food</option>
@@ -58,28 +60,31 @@
                             <option>Taxes</option>
                             <option>Other</option>
                         </select>
+                    </div> 
                     </div>
 
-                    <div class="row input-group mb-3" style="margin: 20px;">
-                        <label style="font-weight: bolder;padding-right: 5px;">Date and Time : </label>
-                        <input class="form-control" type="datetime-local" style="margin-left: 20px;"/>
+
+                    <div class="row justify-content-center">
+                        <label class="col-lg-3 col-sm-3" style="font-weight: bolder;">Date and Time : </label>
+                        <input class="form-control col-lg-5 col-sm-5" type="datetime-local"/>
                     </div>
 
-                    <div class="row input-group mb-3" style="margin: 20px;">
-                        <label style="font-weight: bolder;padding-right: 97px;">Price :</label>
+                    <div class="row justify-content-center">
+                        <label class="col-lg-3 col-sm-3" style="font-weight: bolder;">Enter Your Budget :</label>
+                        <div class="input-group mb-3 col-lg-5 col-sm-5">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">$</span>
                             </div>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <input type="text" class="form-control">
                             <div class="input-group-append">
                                 <span class="input-group-text">.00</span>
                             </div>
                         </div>
+                    </div>
                       
-                        <div class="row justify-content-center" style="padding-left: 100px;padding-top: 10px;">
+                        <div class="row justify-content-center">
                             <a href="WalletMain.html"><button class="savebtn"><i class="fa fa-check"></i></button></a>
                         </div>
-                </div>
             </div>   
         </div>
     </div>
