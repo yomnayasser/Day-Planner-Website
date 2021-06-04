@@ -13,13 +13,18 @@
      
      body
      {
-         background-color: #B0E0E6;
+         background-color:#F5F5F5
      }
      .img-fluid
    {
     margin-top: 14%;
         width: 100%;
         height: 80%; 
+   }
+   .card-title
+   {
+       margin-left: 30%;
+       margin-bottom: 7%;
    }
     .u 
     {
@@ -45,24 +50,28 @@
         margin-top: 5%;
         margin-left: 25%;
     }
-    .btn-success
+    .btn-secondary
     {
         width: 50%;
     }
-
+    .form-control:valid {
+  background-color: #F5F5F5!important;
+  border-color: #DCDCDC;
+}
 
     </style>
    
 </head>
 <body> 
     <div class="container">
-        
+        <div class="card">
             <div class="row">
+               
                 <div class="col-md-5">
-                 <img class="img-fluid" src="../images/planning.png" alt="Card image cap">
+                 <img class="img-fluid" src="../images/Login-cuate (1).png" alt="Card image cap">
             </div>
             <div class="col-md-7">
-                <div class="card">
+                
                  <div class="card-body">
                         <h1 class="card-title">Log In</h4>
                         <div class="d-flex justify-content-start">
@@ -70,16 +79,16 @@
                             <u><a href="../html files/SignUp.html">Sign up</a></u>
                         </div>
 
-                        <p class="card-text">Username</p>
+                        <h5 class="card-text">Username</h5>
                         <input type="text" class="form-control" />
                         <div class="d-flex justify-content-between">
-                            <p class="card-text">Password</p> 
+                            <h5 class="card-text">Password</h5> 
                             <u><a href="#">Forget Password?</a></u>
                         </div>
                         <input type="text" class="form-control" />
                         <input type="checkbox" >Remember me
                         <div class="btn_container">
-                            <a href="../homepage.html" class="btn btn-primary">Login</a>
+                            <a href="../homepage.html" class="btn btn-secondary">Login</a>
                         </div>
 
                     </div>

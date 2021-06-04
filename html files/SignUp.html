@@ -10,7 +10,10 @@
     <title>Sign Up | Day Planner</title>
 
     <style type="text/css">
-   
+    body
+     {
+         background-color:#F5F5F5
+     }
    .card
    {
         margin-top: 10%;
@@ -25,8 +28,9 @@
    }
    .card-title
    {
-       margin-bottom: 5%;
-       margin-left: 2%;
+       margin-bottom: 10%;
+       margin-left: 20%;
+       width: 100%;
        
    }
    .form-control
@@ -34,10 +38,16 @@
        margin-bottom: 3%;
        margin-top: 2%;
        margin-left: 5%
+       
    }
+   .form-control:valid {
+  background-color: #F5F5F5!important;
+  border-color: #DCDCDC;
+}
    .btn-group-toggle
    {
        height: 6%;
+       margin-top: 2%;
    }
    .btn_container
     {
@@ -48,6 +58,7 @@
     {
         width: 80%;
     }
+    
     </style>
    
 </head>
@@ -57,7 +68,7 @@
         <div class="card">
         <div class="row">
             <div class="col-md-5">
-                 <img class="img-fluid" src="../images/Login-rafiki.png" alt="Card image cap">
+                 <img class="img-fluid" src="../images/Mobile login-pana (1).png" alt="Card image cap">
             </div>
             <div class="col-md-7">
                
@@ -65,8 +76,8 @@
                         <h2 class="card-title">Sign Up Form</h2>
 
                         <div class="d-flex justify-content-around">
-                            <p class="card-text">First Name</p>
-                            <p class="card-text">Last Name</p>   
+                            <h6 class="card-text">First Name</h6>
+                            <h6 class="card-text">Last Name</h6>   
                         </div>
 
                         <div class="d-flex justify-content-around">
@@ -75,8 +86,8 @@
                         </div>
 
                         <div class="d-flex justify-content-around">
-                            <p class="card-text">Email</p>
-                            <p class="card-text">Age</p>
+                            <h6 class="card-text">Email</h6>
+                            <h6 class="card-text">Age</h6>
                            
                         </div>
 
@@ -86,7 +97,7 @@
                         </div>
 
                         <div class="d-flex justify-content-around">
-                            <p class="card-text">Password</p>
+                            <h6 class="card-text">Password</h6>
                         </div>
 
                         <div class="d-flex justify-content-around">
@@ -94,7 +105,7 @@
                         </div>
 
                         <div class="d-flex justify-content-around">
-                            <p class="card-text">Confirm Password</p>
+                            <h6 class="card-text">Confirm Password</h6>
                            
                         </div>
 
@@ -103,7 +114,7 @@
                         </div>
 
                         <div class="d-flex justify-content-around">
-                            <p class="card-text">Gender</p>
+                            <h6 class="card-text">Gender</h6>
                            
                         </div>
                         <div class="d-flex justify-content-around">   
@@ -112,7 +123,7 @@
                                     <input type="checkbox">Male
                                 </label>
                                 <label class="btn btn-primary">
-                                    <input type="checkbox">Female
+                                    <input type="checkbox" >Female
                                 </label>
                             </div>  
                     </div>
