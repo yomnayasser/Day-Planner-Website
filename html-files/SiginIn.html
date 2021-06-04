@@ -7,14 +7,19 @@
     <script src="Scripts/umd/popper.js"></script>
     <script src="Scripts/bootstrap.js"></script>
 
-    <title>SignIn Page</title>
+    <title>Login | Day Planner</title>
 
     <style type="text/css">
      
+     body
+     {
+         background-color: #B0E0E6;
+     }
      .img-fluid
    {
+    margin-top: 14%;
         width: 100%;
-        height: 100%; 
+        height: 80%; 
    }
     .u 
     {
@@ -23,10 +28,12 @@
     .card
     {
         margin-top: 10%;
+        margin-bottom: 10%;
     }
     .card-text
     {
         margin-right: 2%;
+        font-size:medium;
     }
 
     .form-control
@@ -36,10 +43,11 @@
     .btn_container
     {
         margin-top: 5%;
+        margin-left: 25%;
     }
-    .btn-primary
+    .btn-success
     {
-        width: 25%;
+        width: 50%;
     }
 
 
@@ -48,17 +56,18 @@
 </head>
 <body> 
     <div class="container">
-        <div class="card">
+        
             <div class="row">
                 <div class="col-md-5">
-                 <img class="img-fluid" src="../images/background.jpg" alt="Card image cap">
-                </div>
-                <div class="col-md-7">
+                 <img class="img-fluid" src="../images/planning.png" alt="Card image cap">
+            </div>
+            <div class="col-md-7">
+                <div class="card">
                  <div class="card-body">
-                        <h4 class="card-title">Log In</h4>
+                        <h1 class="card-title">Log In</h4>
                         <div class="d-flex justify-content-start">
-                            <p class="card-text">Doesn't have account yet?</p> 
-                            <u><a href="#">Sign up</a></u>
+                            <p class="card-text">Don't have an account yet?</p> 
+                            <u><a href="../html files/SignUp.html">Sign up</a></u>
                         </div>
 
                         <p class="card-text">Username</p>
