@@ -89,39 +89,47 @@ a:active {
   background-color: transparent;
   text-decoration: none;
 }
+.breadcrumb-item + .breadcrumb-item::before {
+       color: black;
+} 
+.ToDobtn:focus{
+    outline: none !important;
+}
+.ToDobtn:hover{
+    text-shadow: 0 0 10px #719ECE;
+}
 </style>
 
 
 </head>
-<body>
-  
-  <nav class="navbar navbar-expand-lg navbar-collapse-sm navbar-dark" style="background-color: rgb(44, 82, 82);">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../homepage.html" style="font-style: italic;font-weight: bold;"><h2>Day Planner</h2></a>
-        <nav>
-          <ol class="breadcrumb" style="background-color:rgb(44, 82, 82); width: 120%;">
-            <li class="breadcrumb-item" style="font-size: x-large;"><a href="../homepage.html" style="color: white;">Home</a></li>
-            <li class="breadcrumb-item"  style="color: aliceblue;font-size: x-large;" ><a href="../html files/To Do Lists.html" style="color: white;">ToDo Lists</a></li>
-            <li class="breadcrumb-item active"  style="color: aliceblue;font-size: x-large;">ToDo Items</li>
-          </ol>
-        </nav>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" style="padding-inline: 300px;">
-            <div class="navbar-nav">
-      <a class="nav-link" href="../html-files/notes.html" style="margin-left:30px;">My Notes</a>
+<body style="background-color:#F5F5F5"> 
+    
+  <nav class="navbar navbar-expand-lg navbar-collapse-sm navbar-dark" style="background-color: rgb(42, 126, 115);">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="../homepage.html" style="margin-bottom: 1%;font-style: italic;font-weight: bold;"><h2>Day Planner</h2></a>
+          <button class="navbar-toggler" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+              <div class="navbar-nav" style="margin-left: 40%;">
+                <a class="nav-link" href="../html-files/notes.html" style="margin-left:30px;">My Notes</a>
                 <a class="nav-link" href="../html files/Reminders.html" style="margin-left:30px;">Reminders</a>
-                <a class="nav-link" href="../html-files/WalletMain.html" style="margin-left:30px;">Wallet</a>
-                <a class="nav-link" href="#" style="margin-left:30px;">Calendar</a>
-                <a class="nav-link" href="../html-files/SiginIn.html" style="margin-left:30px;">
+                <a class="nav-link" href="../html-files/WalletMain.html" style="margin-left:30px;">My Wallet</a>
+                  <a class="nav-link" href="../html-files/SiginIn.html" style="margin-left:30px;">
                     <i class="fas fa-sign-out-alt"></i>
                 </a>
-            </div>
-        </div>
-    </div>
-</nav>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <div class="container">
+      <ol class="breadcrumb" style="background-color:#F5F5F5; width: 100%;">
+        <li class="breadcrumb-item" style="font-size: large;"><a href="../homepage.html" style="color: black;">Home</a></li>
+        <li class="breadcrumb-item "  style="font-size: large;" ><a href="../html files/To Do Lists.html" style="color: black;">ToDo Lists</a></li>
+        <li class="breadcrumb-item active"  style="color: #b3abab;font-size: large;" >List Items</li>
+      </ol>
+  </div>
 
 <br><br><br>
 
@@ -136,7 +144,7 @@ a:active {
         
     <div class="custom-control form-control-lg custom-checkbox">
     <input type="checkbox" class="checkbox-1x" id="customCheck1">
-    <label for="customCheck1">&nbsp;First item</label>
+    <label for="customCheck1">&nbsp;T-shirt</label>
     <button class="btn btn-success btn-sm float-right ml-2" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
     <button class="btn btn-danger btn-sm float-right" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
             
@@ -144,7 +152,7 @@ a:active {
 <br>
 <div class="custom-control form-control-lg custom-checkbox">
     <input type="checkbox" class="checkbox-1x" id="customCheck2">
-    <label for="customCheck2">&nbsp;Second item</label>
+    <label for="customCheck2">&nbsp;Shoes</label>
     <button class="btn btn-success btn-sm float-right ml-2" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
     <button class="btn btn-danger btn-sm float-right" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
             
@@ -152,7 +160,7 @@ a:active {
 <br>
 <div class="custom-control form-control-lg custom-checkbox">
     <input type="checkbox" class="checkbox-1x" id="customCheck3">
-    <label  for="customCheck3">&nbsp;Third item</label>
+    <label  for="customCheck3">&nbsp;Backpack</label>
     <button class="btn btn-success btn-sm float-right ml-2" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
     <button class="btn btn-danger btn-sm float-right" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
             
@@ -162,8 +170,8 @@ a:active {
   </div>
   <!-- Trigger the modal with a button -->
   <div class="text-center">
-  <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModal">+ Add Item</button>
-  </div>
+    <button type="button" class="btn btn-md ToDobtn" style="border-style: hidden;background-color: #F5F5F5; color: rgb(42, 126, 115);font-weight: bolder;" data-toggle="modal" data-target="#myModal">+ Add Item</button>
+    </div>
   <br><br>
 
   <!-- Modal -->

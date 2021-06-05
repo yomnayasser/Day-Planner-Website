@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <title>Bootstrap 101 Template</title>
+    <title>Reminder</title>
 
     <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -22,17 +23,25 @@
     $(document).ready(function () {
         $('#addCard').on('click', function () {
             $('.card-holder').append(
-                '<div class="card w-100" id="addCard"><div class="card-body"><button type="button" class="close btn btn-default btn-sm"><span class="far fa-edit"></span></button><b>Reminder name</b><br><b>Date:</b> 20/10/2021<br><button type="button" class="close btn btn-default btn-sm"><span class="fa fa-trash-o"></span></button><b>Time:</b> 01:30 PM</div></div>');
+                '<div class="card w-100" id="addCard"><div class="card-body"><button type="button" class="close btn btn-default btn-sm"><span class="far fa-edit"></span></button><b>Reminder name</b><br><b>Date:</b> 20/10/2021<br><button type="button" class="close btn btn-default btn-sm"><span class="fa fa-trash"></span></button><b>Time:</b> 01:30 PM</div></div>');
         })
     });
 </script>
 
-
+<style>
+  .breadcrumb-item + .breadcrumb-item::before {
+       color: black;
+    }  
+.Reminderbtn:focus{
+    outline: none !important;
+}
+.Reminderbtn:hover{
+    text-shadow: 0 0 10px #719ECE;
+}
+</style>
 
 
   </head>
-
-<body>
 
 <!--<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">-->
 <!--  <div class="container">-->
@@ -67,38 +76,38 @@
 <!--  </div>-->
 <!--</nav>-->
 
-<nav class="navbar navbar-expand-lg navbar-collapse-sm navbar-dark" style="background-color: rgb(44, 82, 82);">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../homepage.html" style="font-style: italic;font-weight: bold;"><h2>Day Planner</h2></a>
-            <nav>
-              <ol class="breadcrumb" style="background-color:rgb(44, 82, 82); width: 120%;">
-                <li class="breadcrumb-item" style="font-size: x-large;"><a href="../homepage.html" style="color: white;">Home</a></li>
-                <li class="breadcrumb-item active"  style="color: aliceblue;font-size: x-large;" >Reminders</li>
-              </ol>
-            </nav>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" style="padding-inline: 300px;">
-                <div class="navbar-nav">
-					<a class="nav-link" href="../html-files/notes.html" style="margin-left:30px;">My Notes</a>
-                    <a class="nav-link" href="../html files/To Do Lists.html" style="margin-left:30px;">ToDo</a>
-                    <a class="nav-link" href="../html-files/WalletMain.html" style="margin-left:30px;">Wallet</a>
-                    <a class="nav-link" href="#" style="margin-left:30px;">Calendar</a>
-                    <a class="nav-link" href="../html-files/SiginIn.html" style="margin-left:30px;">
-                        <i class="fas fa-sign-out-alt"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
+<body style="background-color:#F5F5F5"> 
+    
+  <nav class="navbar navbar-expand-lg navbar-collapse-sm navbar-dark" style="background-color: rgb(42, 126, 115);">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="../homepage.html" style="margin-bottom: 1%;font-style: italic;font-weight: bold;"><h2>Day Planner</h2></a>
+          <button class="navbar-toggler" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+              <div class="navbar-nav" style="margin-left: 50%;">
+                <a class="nav-link" href="../html-files/notes.html" style="margin-left:30px;">My Notes</a>
+                <a class="nav-link" href="../html files/To Do Lists.html" style="margin-left:30px;">ToDo</a>
+                <a class="nav-link" href="../html-files/WalletMain.html" style="margin-left:30px;">My Wallet</a>
+                  <a class="nav-link" href="../html-files/SiginIn.html" style="margin-left:30px;">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+              </div>
+          </div>
+      </div>
+  </nav>
+<div class="container">
+    <ol class="breadcrumb" style="background-color:#F5F5F5; width: 100%;">
+      <li class="breadcrumb-item" style="font-size: large;"><a href="../homepage.html" style="color: black;">Home</a></li>
+      <li class="breadcrumb-item active"  style="color: #b3abab;font-size: large;" >Reminders</li>
+    </ol>
+</div>
 <br><br><br>
 
 <div class="text-center"><h1>My Reminders</h1></div>
 <br>
-<div class="container-fluid" style="border:1px solid #cecece;max-width:50%">
+<div class="container-fluid col-lg-6" style="border:1px solid #cecece;">
     
     <br>
     <div class="card-holder">
@@ -109,7 +118,7 @@
             <br>
             <b>Date:</b> 20/10/2021
             <br>
-            <button type="button" class="close btn btn-default btn-sm"><span class="fa fa-trash-o"></span></button>
+            <button type="button" class="close btn btn-default btn-sm"><span class="fa fa-trash"></span></button>
             <b>Time:</b> 01:30 PM
         </div>
     </div>
@@ -120,7 +129,7 @@
             <br>
             <b>Date:</b> 20/10/2021
             <br>
-            <button type="button" class="close btn btn-default btn-sm"><span class="fa fa-trash-o"></span></button>
+            <button type="button" class="close btn btn-default btn-sm"><span class="fa fa-trash"></span></button>
             <b>Time:</b> 01:30 PM
         </div>
     </div>
@@ -131,7 +140,7 @@
             <br>
             <b>Date:</b> 20/10/2021
             <br>
-            <button type="button" class="close btn btn-default btn-sm"><span class="fa fa-trash-o"></span></button>
+            <button type="button" class="close btn btn-default btn-sm"><span class="fa fa-trash"></span></button>
             <b>Time:</b> 01:30 PM
         </div>
     </div>
@@ -141,8 +150,8 @@
 <!--<button class="btn btn-primary" id="addCard">add card</button>-->
 
 <!-- Trigger the modal with a button -->
-<div class="text-center">
-  <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModal">+ Add Reminder</button>
+<div class="text-center"style="margin-bottom: 5%;">
+  <button type="button" class="btn btn-md Reminderbtn" style="border-style: hidden;background-color: #F5F5F5; color: rgb(42, 126, 115);font-weight: bolder;" data-toggle="modal" data-target="#myModal">+ Add Reminder</button>
   </div>
 
   <!-- Modal -->
@@ -185,6 +194,10 @@
       
     </div>
   </div>
-
+  <script src="../jquery-3.5.1.js"></script>
+        <script src="../jquery-3.5.1.min.js"></script>
+        <script src="../bootstrap.bundle.js"></script>
+        <script src="../bootstrap.bundle.min.js"></script>
+        <script src="../all.js"></script>
   </body>
 </html>

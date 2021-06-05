@@ -6,41 +6,46 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../all.css" />
 
-    <script src="../all.js"></script>
+
     <title>Wallet Main</title>
+    <style>
+        .breadcrumb-item + .breadcrumb-item::before {
+    color: black;
+ }
+    </style>
 </head>
-<body>
+<body style="background-color:#F5F5F5"> 
+    
     <nav class="navbar navbar-expand-lg navbar-collapse-sm navbar-dark" style="background-color: rgb(42, 126, 115);">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../homepage.html" style="font-style: italic;font-weight: bold;"><h2>Day Planner</h2></a>
-            <nav>
-              <ol class="breadcrumb" style="background-color:rgb(44, 82, 82); width: 120%;">
-                <li class="breadcrumb-item" style="font-size: x-large;"><a href="../homepage.html" style="color: white;">Home</a></li>
-                <li class="breadcrumb-item active"  style="color: aliceblue;font-size: x-large;" >Wallet</li>
-              </ol>
-            </nav>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="../homepage.html" style="margin-bottom: 1%;font-style: italic;font-weight: bold;"><h2>Day Planner</h2></a>
+            <button class="navbar-toggler" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" style="padding-inline: 300px;">
-                <div class="navbar-nav">
-          <a class="nav-link" href="../html-files/notes.html" style="margin-left:30px;">My Notes</a>
-                    <a class="nav-link" href="../html files/Reminders.html" style="margin-left:30px;">Reminders</a>
-                    <a class="nav-link" href="../html files/To Do Lists.html" style="margin-left:30px;">ToDo</a>
-                    <a class="nav-link" href="#" style="margin-left:30px;">Calendar</a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav" style="margin-left: 50%;">
+                  <a class="nav-link" href="../html-files/notes.html" style="margin-left:30px;">My Notes</a>
+                  <a class="nav-link" href="../html files/Reminders.html" style="margin-left:30px;">Reminders</a>
+                  <a class="nav-link" href="../html files/To Do Lists.html" style="margin-left:30px;">ToDo</a>
                     <a class="nav-link" href="../html-files/SiginIn.html" style="margin-left:30px;">
-                        <i class="fas fa-sign-out-alt"></i>
-                    </a>
+                      <i class="fas fa-sign-out-alt"></i>
+                  </a>
                 </div>
             </div>
         </div>
     </nav>
 
     <div class="container">
+            <ol class="breadcrumb" style="background-color:#F5F5F5; width: 100%;">
+              <li class="breadcrumb-item" style="font-size: large;"><a href="../homepage.html" style="color: black">Home</a></li>
+              <li class="breadcrumb-item active"  style="color: #b3abab;;font-size: large;" >My Wallet</li>
+            </ol>
+    </div>
+    <div class="container">
         <div class="row justify-content-center">
-            <h4 style="margin-top: 50px;">Remaining : $ 5000</h4>
-            <a href="AddBudget.html" style="margin-top: 50px;margin-left: 5px;"><button class="editbtn"><i class="fas fa-pen"></i></button></a>
+            <h4 style="margin-top: 20px;">Remaining : $ 5000</h4>
+            <a href="AddBudget.html" style="margin-top: 20px;margin-left: 5px;"><button class="editbtn"><i class="fas fa-pen"></i></button></a>
         </div>
         <div class="justify-content-center" style="width:60%;margin-left: 20%;margin-bottom: 5%;">
         <div class="progress rounded-pill row ">
@@ -94,12 +99,18 @@
         <div class="row justify-content-center">
             <a href="AddExpense.html">
                 <button class="ExpenseBtn text-center col-lg-12 col-sm-12" type="button"
-                    style="border-style: hidden;background-color: white; color: rgb(42, 126, 115);font-weight: bolder;">
+                    style="border-style: hidden;background-color: #F5F5F5; color: rgb(42, 126, 115);font-weight: bolder;">
                     + Add Expense
                 </button>
             </a>
         </div>
  </div>
+ <script src="../all.js"></script>
+ <script src="../jquery-3.5.1.js"></script>
+ <script src="../jquery-3.5.1.min.js"></script>
+ <script src="../bootstrap.bundle.js"></script>
+ <script src="../bootstrap.bundle.min.js"></script>
+ <script src="../all.js"></script>
 </body>
 
 </html>

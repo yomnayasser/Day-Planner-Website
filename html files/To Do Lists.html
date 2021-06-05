@@ -65,39 +65,46 @@ a:active {
   background-color: transparent;
   text-decoration: none;
 }
+.breadcrumb-item + .breadcrumb-item::before {
+       color: black;
+} 
+.ToDobtn:focus{
+    outline: none !important;
+}
+.ToDobtn:hover{
+    text-shadow: 0 0 10px #719ECE;
+}
 </style>
 
 
 </head>
-<body>
-  
-  <nav class="navbar navbar-expand-lg navbar-collapse-sm navbar-dark" style="background-color: rgb(44, 82, 82);">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../homepage.html" style="font-style: italic;font-weight: bold;"><h2>Day Planner</h2></a>
-        <nav>
-          <ol class="breadcrumb" style="background-color:rgb(44, 82, 82); width: 120%;">
-            <li class="breadcrumb-item" style="font-size: x-large;"><a href="../homepage.html" style="color: white;">Home</a></li>
-            <li class="breadcrumb-item active"  style="color: aliceblue;font-size: x-large;" >ToDo Lists</li>
-          </ol>
-        </nav>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" style="padding-inline: 300px;">
-            <div class="navbar-nav">
-      <a class="nav-link" href="../html-files/notes.html" style="margin-left:30px;">My Notes</a>
+<body style="background-color:#F5F5F5"> 
+    
+  <nav class="navbar navbar-expand-lg navbar-collapse-sm navbar-dark" style="background-color: rgb(42, 126, 115);">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="../homepage.html" style="margin-bottom: 1%;font-style: italic;font-weight: bold;"><h2>Day Planner</h2></a>
+          <button class="navbar-toggler" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+              <div class="navbar-nav" style="margin-left: 50%;">
+                <a class="nav-link" href="../html-files/notes.html" style="margin-left:30px;">My Notes</a>
                 <a class="nav-link" href="../html files/Reminders.html" style="margin-left:30px;">Reminders</a>
-                <a class="nav-link" href="../html-files/WalletMain.html" style="margin-left:30px;">Wallet</a>
-                <a class="nav-link" href="#" style="margin-left:30px;">Calendar</a>
-                <a class="nav-link" href="../html-files/SiginIn.html" style="margin-left:30px;">
+                <a class="nav-link" href="../html-files/WalletMain.html" style="margin-left:30px;">My Wallet</a>
+                  <a class="nav-link" href="../html-files/SiginIn.html" style="margin-left:30px;">
                     <i class="fas fa-sign-out-alt"></i>
                 </a>
-            </div>
-        </div>
-    </div>
-</nav>
-
+              </div>
+          </div>
+      </div>
+  </nav>
+<div class="container">
+    <ol class="breadcrumb" style="background-color:#F5F5F5; width: 100%;">
+      <li class="breadcrumb-item" style="font-size: large;"><a href="../homepage.html" style="color: black;">Home</a></li>
+      <li class="breadcrumb-item active"  style="color: #b3abab;font-size: large;" >ToDo Lists</li>
+    </ol>
+</div>
 <br><br><br>
 
 <div class="text-center"><h1>To Do Lists</h1></div>
@@ -109,7 +116,7 @@ a:active {
     <a href="../html files/To Do Items.html">
     <div class="card w-100">
         <div class="card-body">
-            <p><h4>New list</h4></p>
+            <p><h4>Shopping List</h4></p>
             <button class="btn btn-success btn-sm float-right ml-2" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
             <button class="btn btn-danger btn-sm float-right" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
             <hr style="width:50%;text-align:left;margin-left:0">
@@ -122,11 +129,11 @@ a:active {
     <a href="../html files/To Do Items.html">
     <div class="card w-100">
         <div class="card-body">
-            <p><h4>New list</h4></p>
+            <p><h4>Study List</h4></p>
             <button class="btn btn-success btn-sm float-right ml-2" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
             <button class="btn btn-danger btn-sm float-right" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
             <hr style="width:50%;text-align:left;margin-left:0">
-            <div class="text-muted">3 items</div>
+            <div class="text-muted">5 items</div>
         </div>
     </div>
     </a>
@@ -134,11 +141,11 @@ a:active {
     <a href="../html files/To Do Items.html">
     <div class="card w-100">
         <div class="card-body">
-            <p><h4>New list</h4></p>
+            <p><h4>Home Work</h4></p>
             <button class="btn btn-success btn-sm float-right ml-2" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
             <button class="btn btn-danger btn-sm float-right" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
             <hr style="width:50%;text-align:left;margin-left:0">
-            <div class="text-muted">3 items</div>
+            <div class="text-muted">6 items</div>
         </div>
     </div>
     </a>
@@ -148,8 +155,8 @@ a:active {
     
   <!-- Trigger the modal with a button -->
   <div class="text-center">
-  <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModal">+ Add List</button>
-  </div>
+    <button type="button" class="btn btn-md ToDobtn" style="border-style: hidden;background-color: #F5F5F5; color: rgb(42, 126, 115);font-weight: bolder;" data-toggle="modal" data-target="#myModal">+ Add List</button>
+    </div>
   <br><br>
 
   <!-- Modal -->
@@ -177,7 +184,10 @@ a:active {
   </div>
   
 </div>
-
-
+<script src="../jquery-3.5.1.js"></script>
+    <script src="../jquery-3.5.1.min.js"></script>
+    <script src="../bootstrap.bundle.js"></script>
+    <script src="../bootstrap.bundle.min.js"></script>
+    <script src="../all.js"></script>
 </body>
 </html>

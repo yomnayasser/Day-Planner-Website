@@ -6,10 +6,11 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="styles.css" />
-
+  <link rel="stylesheet" href="../temp.css" />
   <link href='https://css.gg/add.css' rel='stylesheet'>
   <link href='https://css.gg/profile.css' rel='stylesheet'>
-
+  <link rel="stylesheet" href="../all.css" />
+  <script src="../all.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link id="active_style" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/cosmo/bootstrap.min.css">
@@ -19,36 +20,26 @@
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-collapse-sm navbar-dark" style="background-color:rgb(42, 126, 115)">
-    <div class="container-fluid">
-      <!-- <a class="navbar-brand" href="#" style="font-weight: bold;">Home</a> -->
-      <nav>
-        <ol class="breadcrumb" style="background-color:rgb(42, 126, 115);">
-          <li class="breadcrumb-item active" style="color: aliceblue;font-size: large;">Home</li>
-        </ol>
-      </nav>
-      <!-- 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-      <div class="collapse navbar-collapse"></div>
-      <!-- <form class="ml-auto">
-        <div class="dropdown">
-          <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-            <i class="gg-profile"></i>
-          </button>
-          <ul class="dropdown-menu" aria-labelled-by="dropdownMenuButton">
-            <li><a href="#">Profile </a> </li>
-            <li><a href="#">Settings </a> </li>
-            <div class="dropdown-divider"></div>
-            <li><a href="html-files/SiginIn.html">Logout </a> </li>
-          </ul>
-        </div>
-      </form> -->
-    </div>
-  </nav>
+<nav class="navbar navbar-expand-lg navbar-collapse-sm navbar-dark" style="background-color:rgb(42, 126, 115)">
+  <div class="container-fluid">
+    <nav>
+      <ol class="breadcrumb" style="background-color:rgb(42, 126, 115);">
+        <li class="breadcrumb-item active" style="color: aliceblue;margin-top: 5%;font-size: x-large;">Home</li>
+      </ol>
+    </nav>
+    <button class="navbar-toggler" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-nav" style="margin-left: 95%;">
+          <a class="nav-link" href="../html-files/SiginIn.html">
+              <i class="fas fa-sign-out-alt"></i>
+          </a>
+      </div>
+  </div>
+  </div>
+</nav>
 
   <div class="container-fluid" style="text-align: center;">
     <h1> <b> <i> Day Planner </i> </b> </h1>
